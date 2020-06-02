@@ -1,5 +1,7 @@
 package com.demo.study.gateway.service.impl;
 
+import cn.hutool.Hutool;
+import cn.hutool.extra.mail.MailUtil;
 import com.demo.study.common.data.Result;
 import com.demo.study.gateway.service.AppService;
 import com.demo.study.gateway.service.BaseService;
@@ -25,6 +27,9 @@ public class AppServiceImpl extends BaseService implements AppService {
         System.out.println(vo.getAccountName());
         System.out.println(vo.getAccountPwd());
         System.out.println(vo.getTel());
+
+
         return null;
     }
+
 }

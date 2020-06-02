@@ -30,4 +30,5 @@ public class AppController {
     public Result<VOAccount> register(@RequestBody @Validated VOAccount vo) {
         return this.appService.register(vo);
     }
+
 }
