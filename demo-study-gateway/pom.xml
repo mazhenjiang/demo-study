@@ -28,10 +28,24 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--注意spring-boot-starter 去掉自带的logging,下面会配置log4j2-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+
+        <!--log4j2异步AsyncLogger需要这个依赖,否则AsyncLogger日志打印不出来-->
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.4.2</version>
+        </dependency>
+
     </dependencies>
 
     <profiles>

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author: Aaron Ma
  **/
 @RestController
-@RequestMapping("elastic_search")
+@RequestMapping("es")
 public class ElasticController {
 
     @RequestMapping("/hi")

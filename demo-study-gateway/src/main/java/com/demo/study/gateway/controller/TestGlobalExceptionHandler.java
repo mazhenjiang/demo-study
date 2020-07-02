@@ -1,6 +1,6 @@
 package com.demo.study.gateway.controller;
 
-import com.demo.study.common.exceptions.GlobalException;
+import com.demo.study.common.exceptions.GlobalRuntimeException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +19,6 @@ public class TestGlobalExceptionHandler {
 
     @RequestMapping("/test_global_exception")
     public String testGlobalException() throws Exception{
-        throw new GlobalException();
+        throw new GlobalRuntimeException();
     }
 }

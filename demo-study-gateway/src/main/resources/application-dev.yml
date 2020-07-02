@@ -3,4 +3,8 @@ server:
 spring:
   mvc:
     servlet:
-      path: /demo-study-gateway/
+      path: /demo-study-gateway
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: springboot.log

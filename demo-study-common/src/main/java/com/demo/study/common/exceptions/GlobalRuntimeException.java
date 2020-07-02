@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
  * @author: Aaron Ma
  **/
 @Data
-public class GlobalException extends RuntimeException {
+public class GlobalRuntimeException extends RuntimeException {
 
     private Integer ret;
     private Integer errorcode;
